@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ forum.title }}</title>
+</head>
+<body>
+    <h1>{{ forum.title }}</h1>
+    <p><strong>Author:</strong> {{ forum.author }}</p>
+    <p><strong>Description:</strong> {{ forum.description }}</p>
+    <p><strong>Published on:</strong> {{ forum.pub_date }}</p>
+
+    <a href="{% url 'forums:index' %}">Back to forums list</a>
+</body>
+</html>
